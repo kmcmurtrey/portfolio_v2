@@ -7,9 +7,10 @@
 
         <title>Korey McMurtrey</title>
 
-        <link rel="stylesheet" href="css/app.css">
-        <script src="js/app.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+        <link rel="stylesheet" href="assets/css/app.css">
+
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="assets/js/app.js"></script>
     </head>
     <body>
         @yield('content')
