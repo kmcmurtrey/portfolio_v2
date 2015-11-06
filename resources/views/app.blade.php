@@ -7,6 +7,8 @@
 
         <title>Korey McMurtrey</title>
 
+        <link rel="stylesheet" href="css/app.css">
+        <script src="js/app.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
     </head>
     <body>
