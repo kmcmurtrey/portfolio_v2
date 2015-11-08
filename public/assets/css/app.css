@@ -149,4 +149,56 @@ body {
             font-size: 2.0em;
             max-width: 60%; } }
 
+.main-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .main-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .main-container .project {
+    margin-top: 3em;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .main-container .project::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .main-container .project .project-img {
+      display: block; }
+      @media screen and (min-width: 53.75em) {
+        .main-container .project .project-img {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 31.76157%;
+          margin-left: 8.5298%;
+          border: 1px solid; }
+          .main-container .project .project-img:last-child {
+            margin-right: 0; } }
+    .main-container .project .project-content {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      padding: 1em 1em 4em 1em; }
+      .main-container .project .project-content:last-child {
+        margin-right: 0; }
+      @media screen and (min-width: 53.75em) {
+        .main-container .project .project-content {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 40.29137%;
+          margin-left: 8.5298%; }
+          .main-container .project .project-content:last-child {
+            margin-right: 0; } }
+      .main-container .project .project-content h2 {
+        margin-bottom: 0.9em; }
+      .main-container .project .project-content p {
+        line-height: 1.5em;
+        margin-bottom: 3em; }
+
 /*# sourceMappingURL=app.css.map */

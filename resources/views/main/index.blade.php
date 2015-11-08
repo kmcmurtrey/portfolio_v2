@@ -3,7 +3,7 @@
 @section('content')
     <header class="navigation" role="banner">
         <div class="navigation-wrapper">
-            <h4 class="logo">Korey McMurtrey</h4>
+            <a href="#"><h4 class="logo">Korey McMurtrey</h4></a>
             <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
             <nav role="navigation">
                 <ul id="js-navigation-menu" class="navigation-menu show">
@@ -25,10 +25,9 @@
 
 <div class="main-container">
 
-
-    <section>
-        <img src="" alt="">
-        <div>
+    <section class="project">
+        <img class="project-img" src="assets/img/php_project.jpg" alt="Screenshot of PHP demo project.">
+        <div class="project-content">
             <h2>PHP Project</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <ul class="tech">
@@ -38,9 +37,9 @@
         </div>
     </section>
 
-    <section>
-        <img src="" alt="">
-        <div>
+    <section class="project">
+        <img class="project-img" src="assets/img/lutes_dental.jpg" alt="Screenshot of Lutes Dental Office website.">
+        <div class="project-content">
             <h2>Lutes Dental Office</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <ul class="tech">

@@ -210,3 +210,87 @@ body {
     }
   }
 }
+
+//Project samples section
+.main-container {
+  @include outer-container;
+
+  .project {
+    $base-line-height: 1.5em !default;
+    $action-color: #477DCA !default;
+    $large-screen: em(860) !default;
+    $side-image-border: 1px solid;
+
+    margin-top: 3em;
+    @include outer-container;
+
+    //@include media($large-screen) {
+    //  @include row(table);
+    //}
+
+    .project-img {
+      display: block;
+      //min-height: 12em;
+      //padding: 3em;
+
+      @include media($large-screen) {
+        @include span-columns(4);
+        @include shift(1);
+        border: $side-image-border;
+      }
+    }
+
+    .project-content {
+      @include span-columns(12);
+      padding: 1em 1em 4em 1em;
+
+      @include media($large-screen) {
+        @include span-columns(5);
+        @include shift(1);
+      }
+
+      h2 {
+        margin-bottom: 0.9em;
+      }
+
+      p {
+        line-height: $base-line-height;
+        margin-bottom: 3em;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
