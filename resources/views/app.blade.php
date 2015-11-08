@@ -7,6 +7,7 @@
 
         <title>Korey McMurtrey</title>
 
+        <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/app.css">
 
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
