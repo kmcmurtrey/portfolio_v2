@@ -263,10 +263,13 @@ body {
 
 //Tech tags
 $badge-font-size: 0.75em !default;
-$badge-color: #f04 !default;
+//$badge-color: #f04 !default;
+$dark-gray: #333;
+$badge-color: transparentize($dark-gray, 0.3) !default;
 
 @mixin badge($color: $badge-color) {
   background-color: $color;
+  color: #fff;
   border-radius: $badge-font-size * 5;
   display: inline-block;
   font-size: $badge-font-size;
