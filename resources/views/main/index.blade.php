@@ -14,8 +14,6 @@
             </nav>
         </div>
     </header>
-
-<div class="main-container">
     <div class="hero">
         <div class="hero-inner">
             {{--<a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image"></a>--}}
@@ -25,6 +23,8 @@
             </div>
         </div>
     </div>
+<div class="main-container">
+
 
     <section>
         <img src="" alt="">

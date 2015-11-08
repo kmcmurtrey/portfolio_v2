@@ -95,14 +95,18 @@ header.navigation {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding-bottom: 3px; }
 
+body {
+  margin: 0; }
+
 .hero {
-  background: url("/assets/img/hero_desk.jpg"), -webkit-linear-gradient(-280deg, #20392B, #7F99BE), no-repeat #7F99BE scroll;
-  background: url("/assets/img/hero_desk.jpg"), linear-gradient(10deg, #20392B, #7F99BE), no-repeat #7F99BE scroll;
+  background: url("/assets/img/hero_desk.jpg"), -webkit-linear-gradient(-280deg, #20392B, #7F99BE), fixed no-repeat #7F99BE center center;
+  background: url("/assets/img/hero_desk.jpg"), linear-gradient(10deg, #20392B, #7F99BE), fixed no-repeat #7F99BE center center;
   background-color: #324766;
   background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 3em; }
+  padding-bottom: 3em;
+  background: contain;
+  height: 100vh; }
   .hero .hero-logo img {
     height: 4em;
     margin-bottom: 1em; }
@@ -122,7 +126,8 @@ header.navigation {
       content: "";
       display: table; }
     .hero .hero-inner .hero-copy {
-      text-align: center; }
+      text-align: center;
+      margin-top: 10em; }
       .hero .hero-inner .hero-copy h1 {
         color: white;
         font-size: 1.6em;
