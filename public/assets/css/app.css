@@ -201,4 +201,12 @@ body {
         line-height: 1.5em;
         margin-bottom: 3em; }
 
+.tech li {
+  background-color: #f04;
+  border-radius: 3.75em;
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 1;
+  padding: 0.4em 1.2em; }
+
 /*# sourceMappingURL=app.css.map */
