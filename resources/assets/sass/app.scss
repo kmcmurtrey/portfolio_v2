@@ -11,9 +11,12 @@ header.navigation {
   $dark-gray: #333 !default;
   $large-screen: em(860) !default;
   $navigation-padding: 1em;
-  $navigation-background: $dark-gray;
-  $navigation-color: transparentize(white, 0.3);
-  $navigation-color-hover: white;
+  //$navigation-background: $dark-gray;
+  $navigation-background: white;
+  //$navigation-color: transparentize(white, 0.3);
+  $navigation-color: transparentize($dark-gray, 0.3);
+  //$navigation-color-hover: white;
+  $navigation-color-hover: $dark-gray;
   $navigation-height: 60px;
   $navigation-nav-button-background: $action-color;
   $navigation-nav-button-background-hover: lighten($navigation-background, 10%);
@@ -22,7 +25,7 @@ header.navigation {
   $horizontal-bar-mode: $large-screen;
 
   background-color: $navigation-background;
-  border-bottom: 1px solid darken($navigation-background, 10);
+  //border-bottom: 1px solid darken($navigation-background, 10);
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
@@ -39,7 +42,9 @@ header.navigation {
     max-height: $navigation-height;
     padding-left: $navigation-padding;
     padding-right: 2em;
-    color: $navigation-color;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.25em;
   }
 
   // Mobile view
@@ -69,7 +74,9 @@ header.navigation {
   nav {
     float: none;
     min-height: $navigation-height;
-    z-index: 9999999;
+    //z-index: 9999999;
+    font-size: 1.25em;
+    margin-top: 0.4em;
 
     @include media ($horizontal-bar-mode) {
       float: right;
@@ -105,6 +112,7 @@ header.navigation {
     overflow: hidden;
     padding-right: 0.8em;
     text-align: right;
+    font-weight: bold;
     width: 100%;
     z-index: 9999;
 
@@ -160,6 +168,7 @@ body {
 
   background: contain;
   height: 100vh;
+  z-index: -100;
 
   .hero-logo img {
     height: 4em;
@@ -175,7 +184,7 @@ body {
 
     .hero-copy {
       text-align: center;
-      margin-top: 10em;
+      margin-top: 15em;
 
       h1 {
         color: $hero-color;
@@ -190,11 +199,12 @@ body {
       p {
         color: $hero-color;
         line-height: 1.4em;
+        font-size: 1.6em;
         margin: 0 auto 3em auto;
 
         @include media($large-screen) {
-          font-size: 1.1em;
-          max-width: 40%;
+          font-size: 2.0em;
+          max-width: 60%;
         }
       }
     }

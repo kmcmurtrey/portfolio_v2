@@ -13,16 +13,16 @@
                 </ul>
             </nav>
         </div>
-    </header>
-    <div class="hero">
-        <div class="hero-inner">
-            {{--<a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image"></a>--}}
-            <div class="hero-copy">
-                <h1>Web developer.</h1>
-                <p>My name is Korey McMurtrey, a Code Louisville graduate, and this is my portfolio.</p>
+        <div class="hero">
+            <div class="hero-inner">
+                {{--<a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image"></a>--}}
+                <div class="hero-copy">
+                    <p>My name is Korey McMurtrey, a Code Louisville graduate, and this is my portfolio.</p>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
+
 <div class="main-container">
 
 
