@@ -228,6 +228,7 @@ body {
     @include outer-container;
     border-bottom: 1px solid;
 
+
     @include media($large-screen) {
       padding: 8em 0;
     }
@@ -267,6 +268,10 @@ body {
   }
 }
 
+.project:last-child {
+  border-bottom: none;
+}
+
 //Tech tags
 $badge-font-size: 0.75em !default;
 //$badge-color: #f04 !default;
@@ -287,6 +292,47 @@ $badge-color: transparentize($dark-gray, 0.3) !default;
   @include badge;
 }
 
+//Footer
+.footer {
+  $base-spacing: 1.5em !default;
+  $dark-gray: #333;
+  $footer-background: transparentize($dark-gray, 0.3) !default;
+  $footer-color: #fff;
+
+  background: $footer-background;
+  padding: $base-spacing;
+  width: 100%;
+  display: inline-block;
+
+  ul {
+    line-height: 1.5em;
+    margin: 0 0 1em 0;
+    padding: 0;
+  }
+
+  ul li {
+    list-style: none;
+  }
+
+  .footer-social {
+    display: block;
+    text-align: center;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  img {
+    height: 2.5em;
+    margin: 0 0.5em;
+  }
+
+  .copyright {
+    text-align: center;
+    color: $footer-color;
+  }
+}
 
 
 
