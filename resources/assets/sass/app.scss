@@ -221,18 +221,20 @@ body {
     $action-color: #477DCA !default;
     $large-screen: em(860) !default;
     $side-image-border: 1px solid;
+    $h2-size: 2em;
+    $dark-gray: #333;
+    $font-color: transparentize($dark-gray, 0.3) !default;
 
-    margin-top: 3em;
     @include outer-container;
+    border-bottom: 1px solid;
 
-    //@include media($large-screen) {
-    //  @include row(table);
-    //}
+    @include media($large-screen) {
+      padding: 8em 0;
+    }
 
     .project-img {
       display: block;
-      //min-height: 12em;
-      //padding: 3em;
+      border-radius: 2%;
 
       @include media($large-screen) {
         @include span-columns(4);
@@ -243,7 +245,7 @@ body {
 
     .project-content {
       @include span-columns(12);
-      padding: 1em 1em 4em 1em;
+      padding: 0 1em 4em 1em;
 
       @include media($large-screen) {
         @include span-columns(5);
@@ -252,11 +254,14 @@ body {
 
       h2 {
         margin-bottom: 0.9em;
+        font-size: $h2-size;
+        font-weight: 800;
       }
 
       p {
         line-height: $base-line-height;
         margin-bottom: 3em;
+        color: $font-color;
       }
     }
   }
