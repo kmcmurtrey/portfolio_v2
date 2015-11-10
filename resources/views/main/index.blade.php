@@ -48,39 +48,41 @@
                 </ul>
             </div>
         </section>
+
+        <div class="contact-form">
+            {{--Form elements--}}
+            {!! Form::open(['url' => 'contact']) !!}
+
+            <div class="form-group">
+{{--                {!! Form::label('name', 'Name: ') !!}--}}
+                {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Name']) !!}
+            </div>
+
+            <div class="form-group">
+{{--                {!! Form::label('email', 'Email: ') !!}--}}
+                {!! Form::text('email', null, ['class' => 'form-control', 'placeholder' => 'Email']) !!}
+            </div>
+
+            <div class="form-group">
+{{--                {!! Form::label('message', 'Message: ') !!}--}}
+                {!! Form::textarea('message', null, ['class' => 'form-control', 'placeholder' => 'Message']) !!}
+            </div>
+
+            <div class="form-group">
+                {!! Form::submit('Send', ['class' => 'btn form-control']) !!}
+            </div>
+
+            {!! Form::close() !!}
+
+            @if ($errors->any())
+                <ul class="alert">
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            @endif
+        </div>
     </div>
-
-    {{--Form elements--}}
-    {!! Form::open(['url' => 'contact']) !!}
-
-    <div class="form-group">
-        {!! Form::label('name', 'Name: ') !!}
-        {!! Form::text('name', null, ['class' => 'form-control']) !!}
-    </div>
-
-    <div class="form-group">
-        {!! Form::label('email', 'Email: ') !!}
-        {!! Form::text('email', null, ['class' => 'form-control']) !!}
-    </div>
-
-    <div class="form-group">
-        {!! Form::label('message', 'Message: ') !!}
-        {!! Form::textarea('message', null, ['class' => 'form-control']) !!}
-    </div>
-
-    <div class="form-group">
-        {!! Form::submit('Send', ['class' => 'btn form-control']) !!}
-    </div>
-
-    {!! Form::close() !!}
-
-    @if ($errors->any())
-        <ul class="alert">
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    @endif
 
 @stop
 

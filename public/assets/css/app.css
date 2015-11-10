@@ -207,6 +207,36 @@ body {
         line-height: 1.5em;
         margin-bottom: 3em;
         color: rgba(51, 51, 51, 0.7); }
+  .main-container .contact-form {
+    margin: 2em 0; }
+    @media screen and (min-width: 53.75em) {
+      .main-container .contact-form {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%;
+        margin-left: 17.05961%; }
+        .main-container .contact-form:last-child {
+          margin-right: 0; } }
+    .main-container .contact-form input[type=text], .main-container .contact-form textarea {
+      padding: 1em 2em;
+      margin: 0 1.5em 1em 0;
+      border: none;
+      background: rgba(51, 51, 51, 0.1);
+      font-weight: 600;
+      border-radius: 2%; }
+    .main-container .contact-form input[type=text] {
+      width: 50%; }
+    .main-container .contact-form textarea {
+      resize: none;
+      width: 100%; }
+    .main-container .contact-form .btn {
+      color: rgba(51, 51, 51, 0.7);
+      background-color: #fff;
+      border: 1px solid rgba(51, 51, 51, 0.7);
+      text-align: center;
+      padding: 1em 2em;
+      border-radius: 5%; }
 
 .project:last-child {
   border-bottom: none; }
