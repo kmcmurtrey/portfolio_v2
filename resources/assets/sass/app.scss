@@ -279,7 +279,7 @@ body {
 
     @include media($large-screen) {
       @include span-columns(8);
-      @include shift(2);
+      @include shift(4);
     }
 
     input[type=text], textarea {
@@ -291,8 +291,15 @@ body {
       border-radius: 2%;
     }
 
-    input[type=text] {
-      width: 50%;
+    .form-group-top {
+      width: 100%;
+      @include outer-container;
+
+      input[type=text] {
+        display: inline-block;
+        width: 50%;
+        @include span-columns(6 of 12);
+      }
     }
 
     textarea {
@@ -307,6 +314,7 @@ body {
       text-align: center;
       padding: 1em 2em;
       border-radius: 5%;
+      cursor: pointer;
     }
   }
 }

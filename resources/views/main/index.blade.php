@@ -53,22 +53,20 @@
             {{--Form elements--}}
             {!! Form::open(['url' => 'contact']) !!}
 
-            <div class="form-group">
+            <div class="form-group-top">
 {{--                {!! Form::label('name', 'Name: ') !!}--}}
                 {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Name']) !!}
-            </div>
 
-            <div class="form-group">
 {{--                {!! Form::label('email', 'Email: ') !!}--}}
                 {!! Form::text('email', null, ['class' => 'form-control', 'placeholder' => 'Email']) !!}
             </div>
 
-            <div class="form-group">
+            <div class="form-group-message">
 {{--                {!! Form::label('message', 'Message: ') !!}--}}
                 {!! Form::textarea('message', null, ['class' => 'form-control', 'placeholder' => 'Message']) !!}
             </div>
 
-            <div class="form-group">
+            <div class="form-group-btn">
                 {!! Form::submit('Send', ['class' => 'btn form-control']) !!}
             </div>
 
