@@ -272,56 +272,77 @@ body {
   }
 
   //Contact Form
-  .contact-form {
+  .contact {
     $large-screen: em(860) !default;
     $dark-gray: #333;
     $form-background: transparentize($dark-gray, 0.9) !default;
     $btn-color: transparentize($dark-gray, 0.3) !default;
+    $h2-size: 2em;
 
-    margin: 2em 1em;
+    @include outer-container;
 
+    .contact-content {
+      text-align: center;
+      margin: 1em 0;
+
+      h2 {
+        font-size: $h2-size;
+      }
+    }
     @include media($large-screen) {
-      @include span-columns(8);
-      @include shift(4);
-
-      .form-group-top {
-        width: 100%;
-        @include outer-container;
-
-        input[type=text] {
-          display: inline-block;
-          width: 50%;
-          @include span-columns(6 of 12);
-        }
+      .contact-content {
+        @include span-columns(4 of 12);
       }
     }
 
-    input[type=text] {
-      width: 100%;
-    }
+    .contact-form {
 
-    input[type=text], textarea {
-      padding: 1em 2em;
-      margin: 0 1.5em 1em 0;
-      border: none;
-      background: $form-background;
-      font-weight: 600;
-      border-radius: 2%;
-    }
 
-    textarea {
-      resize: none;
-      width: 100%;
-    }
+      margin: 2em 1em;
 
-    .btn {
-      color: $btn-color;
-      background-color: #fff;
-      border: 1px solid $btn-color;
-      text-align: center;
-      padding: 1em 2em;
-      border-radius: 5%;
-      cursor: pointer;
+      @include media($large-screen) {
+        @include span-columns(8);
+        @include shift(4);
+
+        .form-group-top {
+          width: 100%;
+          @include outer-container;
+
+          input[type=text] {
+            display: inline-block;
+            width: 50%;
+            @include span-columns(6 of 12);
+          }
+        }
+      }
+
+      input[type=text] {
+        width: 100%;
+      }
+
+      input[type=text], textarea {
+        padding: 1em 2em;
+        margin: 0 1.5em 1em 0;
+        border: none;
+        background: $form-background;
+        font-weight: 600;
+        border-radius: 2%;
+      }
+
+      textarea {
+        resize: none;
+        width: 100%;
+      }
+
+      .btn {
+        color: $btn-color;
+        background-color: #fff;
+        border: 1px solid $btn-color;
+        text-align: center;
+        padding: 1em 2em;
+        border-radius: 5%;
+        cursor: pointer;
+      }
     }
   }
 }

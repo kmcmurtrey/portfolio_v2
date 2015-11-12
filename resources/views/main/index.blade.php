@@ -49,37 +49,44 @@
             </div>
         </section>
 
-        <div class="contact-form">
-            {{--Form elements--}}
-            {!! Form::open(['url' => 'contact']) !!}
-
-            <div class="form-group-top">
-{{--                {!! Form::label('name', 'Name: ') !!}--}}
-                {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Name']) !!}
-
-{{--                {!! Form::label('email', 'Email: ') !!}--}}
-                {!! Form::text('email', null, ['class' => 'form-control', 'placeholder' => 'Email']) !!}
+        <section class="contact">
+            <div class="contact-content">
+                <h2>Contact Me</h2>
+                <p>If you have any questions or comments, please let me know.</p>
             </div>
 
-            <div class="form-group-message">
-{{--                {!! Form::label('message', 'Message: ') !!}--}}
-                {!! Form::textarea('message', null, ['class' => 'form-control', 'placeholder' => 'Message']) !!}
+            <div class="contact-form">
+                {{--Form elements--}}
+                {!! Form::open(['url' => 'contact']) !!}
+
+                <div class="form-group-top">
+    {{--                {!! Form::label('name', 'Name: ') !!}--}}
+                    {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Name']) !!}
+
+    {{--                {!! Form::label('email', 'Email: ') !!}--}}
+                    {!! Form::text('email', null, ['class' => 'form-control', 'placeholder' => 'Email']) !!}
+                </div>
+
+                <div class="form-group-message">
+    {{--                {!! Form::label('message', 'Message: ') !!}--}}
+                    {!! Form::textarea('message', null, ['class' => 'form-control', 'placeholder' => 'Message']) !!}
+                </div>
+
+                <div class="form-group-btn">
+                    {!! Form::submit('Send', ['class' => 'btn form-control']) !!}
+                </div>
+
+                {!! Form::close() !!}
+
+                @if ($errors->any())
+                    <ul class="alert">
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                @endif
             </div>
-
-            <div class="form-group-btn">
-                {!! Form::submit('Send', ['class' => 'btn form-control']) !!}
-            </div>
-
-            {!! Form::close() !!}
-
-            @if ($errors->any())
-                <ul class="alert">
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            @endif
-        </div>
+        </section>
     </div>
 
 @stop
