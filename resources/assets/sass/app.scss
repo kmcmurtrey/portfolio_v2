@@ -228,7 +228,7 @@ body {
 
     @include outer-container;
     border-bottom: 1px solid;
-
+    padding: 2em 0;
 
     @include media($large-screen) {
       padding: 8em 0;
@@ -237,17 +237,20 @@ body {
     .project-img {
       display: block;
       border-radius: 2%;
+      border: $side-image-border;
+      @include span-columns(10);
+      @include shift(1);
 
       @include media($large-screen) {
         @include span-columns(4);
         @include shift(1);
-        border: $side-image-border;
       }
     }
 
     .project-content {
-      @include span-columns(12);
-      padding: 0 1em 4em 1em;
+      @include span-columns(10);
+      @include shift(1);
+      padding: 1em 0;
 
       @include media($large-screen) {
         @include span-columns(5);
@@ -275,11 +278,26 @@ body {
     $form-background: transparentize($dark-gray, 0.9) !default;
     $btn-color: transparentize($dark-gray, 0.3) !default;
 
-    margin: 2em 0;
+    margin: 2em 1em;
 
     @include media($large-screen) {
       @include span-columns(8);
       @include shift(4);
+
+      .form-group-top {
+        width: 100%;
+        @include outer-container;
+
+        input[type=text] {
+          display: inline-block;
+          width: 50%;
+          @include span-columns(6 of 12);
+        }
+      }
+    }
+
+    input[type=text] {
+      width: 100%;
     }
 
     input[type=text], textarea {
@@ -289,17 +307,6 @@ body {
       background: $form-background;
       font-weight: 600;
       border-radius: 2%;
-    }
-
-    .form-group-top {
-      width: 100%;
-      @include outer-container;
-
-      input[type=text] {
-        display: inline-block;
-        width: 50%;
-        @include span-columns(6 of 12);
-      }
     }
 
     textarea {
