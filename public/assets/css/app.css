@@ -104,6 +104,7 @@ body {
 .hero {
   background: url("/assets/img/hero_desk.jpg"), -webkit-linear-gradient(-280deg, #20392B, #7F99BE), fixed no-repeat #7F99BE center center;
   background: url("/assets/img/hero_desk.jpg"), linear-gradient(10deg, #20392B, #7F99BE), fixed no-repeat #7F99BE center center;
+  background-attachment: fixed;
   background-color: #324766;
   background-position: top;
   background-repeat: no-repeat;
@@ -305,7 +306,7 @@ body {
             margin-right: 0; }
           @media screen and (min-width: 53.75em) {
             .main-container .contact .contact-form .form-group-btn .btn {
-              margin-left: 85.29804%; } }
+              margin-left: 68.23843%; } }
 
 .project:last-child {
   border-bottom: none; }

@@ -150,6 +150,14 @@ body {
   margin: 0;
 }
 
+//html {
+//  background: url('/assets/img/hero_desk.jpg') no-repeat center center fixed;
+//  -webkit-background-size: cover;
+//  -moz-background-size: cover;
+//  -o-background-size: cover;
+//  background-size: cover;
+//}
+
 //Hero styles
 .hero {
   $base-border-radius: 3px !default;
@@ -162,6 +170,7 @@ body {
   $hero-image: '/assets/img/hero_desk.jpg';
 
   @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), fixed no-repeat $hero-background-top center center);
+  background-attachment: fixed;
   background-color: #324766;
   background-position: top;
   background-repeat: no-repeat;
@@ -352,7 +361,7 @@ body {
           @include shift(4);
 
           @include media($large-screen) {
-            @include shift(10);
+            @include shift(8);
           }
         }
       }
