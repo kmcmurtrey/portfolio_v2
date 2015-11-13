@@ -234,7 +234,8 @@ body {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 31.76157%; }
+        width: 23.23176%;
+        margin-left: 8.5298%; }
         .main-container .contact .contact-content:last-child {
           margin-right: 0; } }
     .main-container .contact .contact-form {
@@ -245,7 +246,7 @@ body {
           display: block;
           margin-right: 2.35765%;
           width: 65.88078%;
-          margin-left: 34.11922%; }
+          margin: 1em 0; }
           .main-container .contact .contact-form:last-child {
             margin-right: 0; }
           .main-container .contact .contact-form .form-group-top {
@@ -278,14 +279,33 @@ body {
       .main-container .contact .contact-form textarea {
         resize: none;
         width: 100%; }
-      .main-container .contact .contact-form .btn {
-        color: rgba(51, 51, 51, 0.7);
-        background-color: #fff;
-        border: 1px solid rgba(51, 51, 51, 0.7);
-        text-align: center;
-        padding: 1em 2em;
-        border-radius: 5%;
-        cursor: pointer; }
+      .main-container .contact .contact-form .form-group-btn {
+        width: 100%;
+        max-width: 68em;
+        margin-left: auto;
+        margin-right: auto; }
+        .main-container .contact .contact-form .form-group-btn::after {
+          clear: both;
+          content: "";
+          display: table; }
+        .main-container .contact .contact-form .form-group-btn .btn {
+          color: rgba(51, 51, 51, 0.7);
+          background-color: #fff;
+          border: 1px solid rgba(51, 51, 51, 0.7);
+          text-align: center;
+          padding: 1em 2em;
+          border-radius: 5%;
+          cursor: pointer;
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 31.76157%;
+          margin-left: 34.11922%; }
+          .main-container .contact .contact-form .form-group-btn .btn:last-child {
+            margin-right: 0; }
+          @media screen and (min-width: 53.75em) {
+            .main-container .contact .contact-form .form-group-btn .btn {
+              margin-left: 85.29804%; } }
 
 .project:last-child {
   border-bottom: none; }

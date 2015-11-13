@@ -291,7 +291,8 @@ body {
     }
     @include media($large-screen) {
       .contact-content {
-        @include span-columns(4 of 12);
+        @include span-columns(3 of 12);
+        @include shift(1);
       }
     }
 
@@ -301,8 +302,9 @@ body {
       margin: 2em 1em;
 
       @include media($large-screen) {
-        @include span-columns(8);
-        @include shift(4);
+        @include span-columns(8 of 12);
+        //@include shift(1);
+        margin: 1em 0;
 
         .form-group-top {
           width: 100%;
@@ -334,15 +336,28 @@ body {
         width: 100%;
       }
 
-      .btn {
-        color: $btn-color;
-        background-color: #fff;
-        border: 1px solid $btn-color;
-        text-align: center;
-        padding: 1em 2em;
-        border-radius: 5%;
-        cursor: pointer;
+      .form-group-btn {
+        width: 100%;
+        @include outer-container;
+
+        .btn {
+          color: $btn-color;
+          background-color: #fff;
+          border: 1px solid $btn-color;
+          text-align: center;
+          padding: 1em 2em;
+          border-radius: 5%;
+          cursor: pointer;
+          @include span-columns(4 of 12);
+          @include shift(4);
+
+          @include media($large-screen) {
+            @include shift(10);
+          }
+        }
       }
+
+
     }
   }
 }
