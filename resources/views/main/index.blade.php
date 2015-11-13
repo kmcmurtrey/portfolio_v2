@@ -3,13 +3,13 @@
 @section('content')
     <header class="navigation" role="banner">
         <div class="navigation-wrapper">
-            <a href="#"><h4 class="logo">Korey McMurtrey</h4></a>
+            <a href="/"><h4 class="logo">Korey McMurtrey</h4></a>
             <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
             <nav role="navigation">
                 <ul id="js-navigation-menu" class="navigation-menu show">
-                    <li class="nav-link"><a href="javascript:void(0)">Home</a></li>
-                    <li class="nav-link"><a href="javascript:void(0)">Projects</a></li>
-                    <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
+                    <li class="nav-link"><a href="about">About</a></li>
+                    <li class="nav-link"><a href="#projects">Projects</a></li>
+                    <li class="nav-link"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -24,6 +24,7 @@
 
     <div class="main-container">
 
+        <a href="#" name="projects"></a>
         <section class="project">
             <img class="project-img" src="assets/img/php_project.jpg" alt="Screenshot of PHP demo project.">
             <div class="project-content">
@@ -49,6 +50,7 @@
             </div>
         </section>
 
+        <a href="#" name="contact"></a>
         <section class="contact">
             <div class="contact-content">
                 <h2>Contact Me</h2>
