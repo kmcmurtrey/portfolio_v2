@@ -240,7 +240,7 @@ body {
     padding: 2em 0;
 
     @include media($large-screen) {
-      padding: 8em 0;
+      padding: 6em 0;
     }
 
     .project-img {
@@ -298,7 +298,10 @@ body {
         font-size: $h2-size;
       }
     }
+
     @include media($large-screen) {
+      padding: 6em 0;
+
       .contact-content {
         @include span-columns(3 of 12);
         @include shift(1);
@@ -307,13 +310,13 @@ body {
 
     .contact-form {
 
-
       margin: 2em 1em;
 
       @include media($large-screen) {
-        @include span-columns(8 of 12);
-        //@include shift(1);
         margin: 1em 0;
+        @include span-columns(7 of 12);
+        @include shift(1);
+
 
         .form-group-top {
           width: 100%;
