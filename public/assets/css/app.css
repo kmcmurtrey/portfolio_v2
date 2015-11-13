@@ -197,7 +197,8 @@ body {
       margin-right: 2.35765%;
       width: 82.94039%;
       margin-left: 8.5298%;
-      padding: 1em 0; }
+      padding: 1em 0;
+      text-align: center; }
       .main-container .project .project-content:last-child {
         margin-right: 0; }
       @media screen and (min-width: 53.75em) {
@@ -206,7 +207,8 @@ body {
           display: block;
           margin-right: 2.35765%;
           width: 40.29137%;
-          margin-left: 8.5298%; }
+          margin-left: 8.5298%;
+          text-align: inherit; }
           .main-container .project .project-content:last-child {
             margin-right: 0; } }
       .main-container .project .project-content h2 {

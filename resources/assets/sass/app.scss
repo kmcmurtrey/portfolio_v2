@@ -260,10 +260,12 @@ body {
       @include span-columns(10);
       @include shift(1);
       padding: 1em 0;
+      text-align: center;
 
       @include media($large-screen) {
         @include span-columns(5);
         @include shift(1);
+        text-align: inherit;
       }
 
       h2 {
