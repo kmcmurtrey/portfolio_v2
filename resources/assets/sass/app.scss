@@ -40,7 +40,6 @@ header.navigation {
   .logo {
     float: left;
     max-height: $navigation-height;
-    padding-right: 2em;
     color: #000;
     font-weight: bold;
     font-size: 1.25em;
@@ -153,75 +152,83 @@ body {
   margin: 0;
 }
 
-//html {
-//  background: url('/assets/img/hero_desk.jpg') no-repeat center center fixed;
-//  -webkit-background-size: cover;
-//  -moz-background-size: cover;
-//  -o-background-size: cover;
-//  background-size: cover;
-//}
-
 //Hero styles
 .hero {
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
   $large-screen: em(860) !default;
+  $hero-gradient: rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5);
   $hero-background-top: #7F99BE;
   $hero-background-bottom: #20392B;
   $hero-color: white;
   $gradient-angle: 10deg;
   $hero-image: '/assets/img/hero_desk.jpg';
 
-  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), fixed no-repeat $hero-background-top center center);
-  background-attachment: fixed;
-  background-color: #324766;
-  background-position: top;
+  @include background(linear-gradient($hero-gradient), url($hero-image));
+  background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 3em;
-
-  background: contain;
-  height: 100vh;
-  z-index: -100;
-
-  .hero-logo img {
-    height: 4em;
-    margin-bottom: 1em;
-  }
+  background-position: center center;
+  height: auto;
+  //width: 100%;
 
   .hero-inner {
     @include outer-container;
     @include clearfix;
     margin: auto;
-    padding: 3.5em;
     text-align: center;
 
     .hero-copy {
       text-align: center;
-      margin-top: 15em;
-
-      h1 {
-        color: $hero-color;
-        font-size: 1.6em;
-        margin-bottom: 0.5em;
-
-        @include media($large-screen) {
-          font-size: 1.8em;
-        }
-      }
+      padding: 3em 0;
+    }
 
       p {
         color: $hero-color;
         line-height: 1.4em;
-        font-size: 1.6em;
-        margin: 0 auto 3em auto;
+        font-size: 1.2em;
 
-        @include media($large-screen) {
+      }
+  }
+
+  @include media($large-screen) {
+    @include background(linear-gradient($hero-gradient), url($hero-image), fixed no-repeat $hero-background-top center center);
+    background-color: #324766;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-bottom: 3em;
+    background: contain;
+
+    background-attachment: fixed;
+    height: 100vh;
+    z-index: -100;
+
+    .hero-inner {
+      @include outer-container;
+      @include clearfix;
+      margin: auto;
+      padding: 3.5em;
+      text-align: center;
+
+      .hero-copy {
+        text-align: center;
+        margin-top: 15em;
+        padding: 0;
+
+        p {
           font-size: 2.0em;
           max-width: 60%;
+          margin: 0 auto 3em auto;
         }
       }
     }
   }
+
+  //.hero-logo img {
+  //  height: 4em;
+  //  margin-bottom: 1em;
+  //}
+
+
 }
 
 //Body
