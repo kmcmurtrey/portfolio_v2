@@ -2,6 +2,8 @@
 
 @import "libraries/bourbon/bourbon";
 @import "libraries/neat/neat";
+$main-color: #a169aa;
+$white: #fff;
 
 //Nav Styles
 header.navigation {
@@ -13,9 +15,7 @@ header.navigation {
   $navigation-padding: 1em;
   //$navigation-background: $dark-gray;
   $navigation-background: white;
-  //$navigation-color: transparentize(white, 0.3);
   $navigation-color: transparentize($dark-gray, 0.3);
-  //$navigation-color-hover: white;
   $navigation-color-hover: $dark-gray;
   $navigation-height: 60px;
   $navigation-nav-button-background: $action-color;
@@ -30,17 +30,20 @@ header.navigation {
   width: 100%;
   z-index: 999;
 
+
   .navigation-wrapper {
     @include clearfix;
     @include outer-container;
     position: relative;
     z-index: 9999;
+    background-color: transparentize($dark-gray, 1);
+
   }
 
   .logo {
     float: left;
     max-height: $navigation-height;
-    color: #000;
+    color: $white;
     font-weight: bold;
     font-size: 1.25em;
     padding: 1em 0 1em 1em;
@@ -53,7 +56,7 @@ header.navigation {
   // Mobile view
 
   .navigation-menu-button {
-    color: $navigation-color;
+    color: $white;
     display: block;
     float: right;
     line-height: $navigation-height;
@@ -66,10 +69,11 @@ header.navigation {
       display: none;
     }
 
-    &:focus,
-    &:hover {
-      color: $navigation-color-hover;
-    }
+    //&:focus,
+    //&:hover {
+    //  color: $navigation-color-hover;
+    //  color: $main-color;
+    //}
   }
 
   // Nav menu
@@ -80,9 +84,16 @@ header.navigation {
     //z-index: 9999999;
     font-size: 1.25em;
     //margin-top: 0.4em;
+    right: 0;
+    left: 0;
+    position: absolute;
+    margin: 3em 2em;
+    border-radius: 2%;
 
     @include media ($horizontal-bar-mode) {
       float: right;
+      position: inherit;
+      margin: 0;
     }
   }
 
@@ -108,14 +119,20 @@ header.navigation {
 
   // The nav items
 
+  li {
+
+  }
+
   ul li.nav-link {
-    background: $navigation-background;
+    background: $main-color;
     display: block;
     line-height: $navigation-height;
     overflow: hidden;
     padding-right: 0.8em;
-    text-align: right;
+    border-bottom: 1px solid #000;
+    text-align: center;
     font-weight: bold;
+
     width: 100%;
     z-index: 9999;
 
@@ -124,11 +141,13 @@ header.navigation {
       display: inline;
       line-height: $navigation-height;
       text-decoration: none;
+      border-bottom: none;
+      text-align: right;
       width: auto;
     }
 
     a {
-      color: $navigation-color;
+      color: $white;
       display: inline-block;
       text-decoration: none;
 
@@ -138,7 +157,8 @@ header.navigation {
 
       &:focus,
       &:hover {
-        color: $navigation-color-hover;
+        //color: $navigation-color-hover;
+        color: $main-color;
       }
     }
   }
@@ -157,7 +177,7 @@ body {
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
   $large-screen: em(860) !default;
-  $hero-gradient: rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5);
+  $hero-gradient: rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3);
   $hero-background-top: #7F99BE;
   $hero-background-bottom: #20392B;
   $hero-color: white;
@@ -169,7 +189,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   height: auto;
-  //width: 100%;
+  margin-top: -3.75em;
 
   .hero-inner {
     @include outer-container;
@@ -179,7 +199,7 @@ body {
 
     .hero-copy {
       text-align: center;
-      padding: 3em 0;
+      padding: 6em 1em;
     }
 
       p {
@@ -251,7 +271,7 @@ body {
 
     //icons
     .fa {
-      color: $font-color;
+      color: $main-color;
       margin: 0 0.5em 0.5em;
     }
 
@@ -371,10 +391,11 @@ body {
         @include outer-container;
 
         .btn {
-          color: $btn-color;
-          background-color: #fff;
-          border: 1px solid $btn-color;
+          color: $main-color;
+          background-color: $white;
+          border: 2px solid $main-color;
           text-align: center;
+          font-weight: bold;
           padding: 1em 2em;
           border-radius: 5%;
           cursor: pointer;
@@ -402,9 +423,9 @@ $badge-font-size: 0.75em !default;
 $dark-gray: #333;
 $badge-color: transparentize($dark-gray, 0.3) !default;
 
-@mixin badge($color: $badge-color) {
+@mixin badge($color: $main-color) {
   background-color: $color;
-  color: #fff;
+  color: $white;
   border-radius: $badge-font-size * 5;
   display: inline-block;
   font-size: $badge-font-size;
@@ -421,7 +442,7 @@ $badge-color: transparentize($dark-gray, 0.3) !default;
   $base-spacing: 1.5em !default;
   $dark-gray: #333;
   $footer-background: transparentize($dark-gray, 0.3) !default;
-  $footer-color: #fff;
+  $footer-color: $white;
 
   background: $footer-background;
   padding: $base-spacing;
@@ -453,7 +474,7 @@ $badge-color: transparentize($dark-gray, 0.3) !default;
   }
 
   .fa {
-    color: #fff;
+    color: $white;
     margin: 0 0.5em;
   }
 
