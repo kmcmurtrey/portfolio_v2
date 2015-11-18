@@ -33,13 +33,19 @@
                 <ul class="tech">
                     <li>PHP</li>
                     <li>MySQL</li>
+                    <li>Composer</li>
+                    <li>Vagrant</li>
+                    <li>Git</li>
+                    <li>Bootstrap 3</li>
                 </ul>
-                <a class="font-icon fa fa-2x" href="https://github.com/kmcmurtrey/web_dev_resources">
-                    <i class="fa fa-github"></i>
-                </a>
-                <a class="font-icon fa fa-2x" href="https://youtu.be/Gwas_D4R8_w">
-                    <i class="fa fa-youtube"></i>
-                </a>
+                <div class="icons">
+                    <a class="font-icon fa fa-2x" href="https://github.com/kmcmurtrey/web_dev_resources">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a class="font-icon fa fa-2x" href="https://youtu.be/Gwas_D4R8_w">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -51,10 +57,16 @@
                 <h2>Lutes Dental Office</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <ul class="tech">
-                    <li>HTML/CSS</li>
+                    <li>HTML5 / CSS3</li>
                     <li>jQuery</li>
                     <li>Foundation</li>
+                    <li>Git</li>
                 </ul>
+                <div class="icons">
+                    <a class="font-icon fa fa-2x" href="https://github.com/kmcmurtrey/dr_lutes_dental">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </div>
             </div>
         </section>
 

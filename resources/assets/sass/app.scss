@@ -2,6 +2,7 @@
 
 @import "libraries/bourbon/bourbon";
 @import "libraries/neat/neat";
+$large-screen: em(860) !default;
 $main-color: #a169aa;
 $white: #fff;
 
@@ -285,6 +286,14 @@ body {
 
     @include media($large-screen) {
       padding: 6em 0;
+      .font-icon {
+        margin-top: 0.5em;
+      }
+      .icons {
+        @include span-columns(10 of 12);
+        @include shift(1 of 12);
+        text-align: center;
+      }
     }
 
     .project-img {
@@ -301,6 +310,7 @@ body {
     }
 
     .project-content {
+      @include outer-container;
       @include span-columns(10);
       @include shift(1);
       padding: 1em 0;
@@ -443,6 +453,15 @@ $badge-color: transparentize($dark-gray, 0.3) !default;
 
 .tech li {
   @include badge;
+  margin-top: 0.5em;
+}
+
+@include media($large-screen) {
+  .tech {
+    @include span-columns(10 of 12);
+    @include shift(1 of 12);
+    text-align: center;
+  }
 }
 
 //Footer
