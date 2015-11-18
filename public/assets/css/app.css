@@ -198,8 +198,9 @@ body {
       content: "";
       display: table; }
     .main-container .project .fa {
-      color: #a169aa;
-      margin: 0 0.5em 0.5em; }
+      color: #a169aa; }
+    .main-container .project .font-icon {
+      margin: 0.25em 0.25em 0; }
     @media screen and (min-width: 53.75em) {
       .main-container .project {
         padding: 6em 0; } }
@@ -352,7 +353,7 @@ body {
 .tech li {
   background-color: #a169aa;
   color: #fff;
-  border-radius: 3.75em;
+  border-radius: 0.5em;
   display: inline-block;
   font-size: 0.75em;
   line-height: 1;

@@ -277,7 +277,10 @@ body {
     //icons
     .fa {
       color: $main-color;
-      margin: 0 0.5em 0.5em;
+    }
+
+    .font-icon {
+      margin: 0.25em 0.25em 0;
     }
 
     @include media($large-screen) {
@@ -431,7 +434,7 @@ $badge-color: transparentize($dark-gray, 0.3) !default;
 @mixin badge($color: $main-color) {
   background-color: $color;
   color: $white;
-  border-radius: $badge-font-size * 5;
+  border-radius: 0.5em;
   display: inline-block;
   font-size: $badge-font-size;
   line-height: 1;
