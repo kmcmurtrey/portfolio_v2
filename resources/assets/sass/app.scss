@@ -255,6 +255,12 @@ body {
 .main-container {
   @include outer-container;
 
+  hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(51, 51, 51, 0.3), rgba(0, 0, 0, 0));
+  }
+
   //Project samples section
   .project {
     $base-line-height: 1.5em !default;
@@ -266,7 +272,6 @@ body {
     $font-color: transparentize($dark-gray, 0.3) !default;
 
     @include outer-container;
-    border-bottom: 1px solid;
     padding: 2em 0;
 
     //icons

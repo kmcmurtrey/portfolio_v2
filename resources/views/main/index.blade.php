@@ -45,6 +45,8 @@
             </div>
         </section>
 
+        <hr>
+
         <section class="project">
             <img class="project-img" src="assets/img/lutes_dental.jpg" alt="Screenshot of Lutes Dental Office website.">
             <div class="project-content">
@@ -57,6 +59,8 @@
                 </ul>
             </div>
         </section>
+
+        <hr>
 
         <a href="#" name="contact"></a>
         <section class="contact">

@@ -184,11 +184,14 @@ body {
     clear: both;
     content: "";
     display: table; }
+  .main-container hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, rgba(51, 51, 51, 0.3), transparent); }
   .main-container .project {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 1px solid;
     padding: 2em 0; }
     .main-container .project::after {
       clear: both;
