@@ -11,6 +11,11 @@
                     <i class="fa fa-linkedin fa-2x"></i>
                 </a>
             </li>
+            <li>
+                <a href="mailto:korey.mcmurtrey@gmail.com">
+                    <i class="fa fa-envelope fa-2x"></i>
+                </a>
+            </li>
         </ul>
     </div>
 

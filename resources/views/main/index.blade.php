@@ -77,6 +77,18 @@
             <div class="contact-content">
                 <h2>Contact Me</h2>
                 <p>If you have any questions or comments, please let me know.</p>
+
+                <div class="icons">
+                    <a class="font-icon fa fa-2x" href="https://github.com/kmcmurtrey">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a class="font-icon fa fa-2x" href="https://www.linkedin.com/in/koreymcmurtrey">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a class="font-icon fa fa-2x" href="mailto:korey.mcmurtrey@gmail.com">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </div>
             </div>
 
             <div class="contact-form">

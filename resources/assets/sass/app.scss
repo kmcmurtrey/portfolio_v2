@@ -5,6 +5,8 @@
 $large-screen: em(860) !default;
 $main-color: #a169aa;
 $white: #fff;
+$dark-gray: #333;
+$font-color: transparentize($dark-gray, 0.3) !default;
 
 //Nav Styles
 header.navigation {
@@ -352,6 +354,30 @@ body {
 
       h2 {
         font-size: $h2-size;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+      }
+
+      p {
+        line-height: 1.5em;
+        margin-bottom: 1em;
+        color: $font-color;
+      }
+
+      .icons {
+        display: none;
+        margin: 0.25em;
+
+        @include media($large-screen) {
+          display: inline-block;
+          .fa {
+            color: $main-color;
+          }
+
+          .font-icon {
+            margin: 0em 0.25em;
+          }
+        }
       }
     }
 
@@ -370,7 +396,7 @@ body {
 
       @include media($large-screen) {
         margin: 1em 0;
-        @include span-columns(7 of 12);
+        @include span-columns(6 of 12);
         @include shift(1);
 
 
@@ -492,6 +518,10 @@ $badge-color: transparentize($dark-gray, 0.3) !default;
 
     li {
       display: inline-block;
+    }
+
+    @include media($large-screen) {
+      display: none;
     }
   }
 
