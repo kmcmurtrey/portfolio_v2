@@ -283,8 +283,8 @@ body {
       display: block;
       border-radius: 2%;
       border: $side-image-border;
-      @include span-columns(10);
-      @include shift(1);
+      @include span-columns(8);
+      @include shift(2);
 
       @include media($large-screen) {
         @include span-columns(4);
