@@ -88,7 +88,7 @@
                     <a class="font-icon fa fa-2x" href="mailto:korey.mcmurtrey@gmail.com">
                         <i class="fa fa-envelope"></i>
                     </a>
-                    <a class="font-icon fa fa-2x" href="#">
+                    <a class="font-icon fa fa-2x" href="resume">
                         <i class="fa fa-file-text"></i>
                     </a>
                 </div>

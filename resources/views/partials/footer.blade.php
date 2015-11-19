@@ -17,7 +17,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="resume">
                     <i class="fa fa-file-text fa-2x"></i>
                 </a>
             </li>

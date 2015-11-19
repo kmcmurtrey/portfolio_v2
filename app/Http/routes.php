@@ -12,5 +12,6 @@
 */
 
 Route::get('/', 'PagesController@index');
+Route::get('resume', 'PagesController@show');
 
 Route::post('contact', 'ContactController@sendContactInfo');
