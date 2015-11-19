@@ -4,6 +4,12 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif; }
+
+p, li {
+  font-family: 'Merriweather', serif; }
+
 header.navigation {
   background-color: white;
   min-height: 60px;

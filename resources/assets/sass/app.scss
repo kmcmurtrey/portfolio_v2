@@ -8,6 +8,14 @@ $white: #fff;
 $dark-gray: #333;
 $font-color: transparentize($dark-gray, 0.3) !default;
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+}
+
+p, li {
+  font-family: 'Merriweather', serif;
+}
+
 //Nav Styles
 header.navigation {
   $base-border-color: gainsboro !default;
