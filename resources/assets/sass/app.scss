@@ -315,7 +315,6 @@ body {
       @include outer-container;
       @include span-columns(10);
       @include shift(1);
-      padding: 1em 0;
       text-align: center;
 
       @include media($large-screen) {

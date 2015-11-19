@@ -7,7 +7,7 @@
             <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
             <nav role="navigation">
                 <ul id="js-navigation-menu" class="navigation-menu show">
-                    <li class="nav-link"><a href="about">About</a></li>
+                    <li class="nav-link"><a href="#about">About</a></li>
                     <li class="nav-link"><a href="#projects">Projects</a></li>
                     <li class="nav-link"><a href="#contact">Contact</a></li>
                 </ul>
@@ -29,7 +29,7 @@
             <img class="project-img" src="assets/img/php_project.jpg" alt="Screenshot of PHP demo project.">
             <div class="project-content">
                 <h2>PHP Project</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>For my Code Louisville PHP final project, I coded a demo site in vanilla PHP that connected to a MySQL database. My goal was to demonstrate basic CRUD functionality. The site is a collection of online web development learning resources. The user can create a new resource, can display different resources based on categories, can update existing resources, and can delete them from the database. I also learned how to use Composer and Vagrant boxes, and recorded a video walkthrough of my project.</p>
                 <ul class="tech">
                     <li>PHP</li>
                     <li>MySQL</li>
@@ -55,7 +55,7 @@
             <img class="project-img" src="assets/img/lutes_dental.jpg" alt="Screenshot of Lutes Dental Office website.">
             <div class="project-content">
                 <h2>Lutes Dental Office</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>My first full project is a website for a dental office, completed as Code Louisville's front-end project. It's a one-page layout featuring a slideshow, forms to download, and contact information. In addition to using a little jQuery, I also built the site from the Foundation framework, and learned to use Git for version control.</p>
                 <ul class="tech">
                     <li>HTML5 / CSS3</li>
                     <li>jQuery</li>
