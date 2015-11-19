@@ -16,6 +16,11 @@
                     <i class="fa fa-envelope fa-2x"></i>
                 </a>
             </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-file-text fa-2x"></i>
+                </a>
+            </li>
         </ul>
     </div>
 
