@@ -4,9 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests\ContactMeRequest;
+//use App\Http\Requests\ContactMeRequest;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\Validator;
 
 class ContactController extends Controller
 {
@@ -16,7 +19,19 @@ class ContactController extends Controller
      * @param ContactMeRequest $request
      * @return Redirect
      */
-    public function sendContactInfo(ContactMeRequest $request) {
+    public function sendContactInfo(Request $request) {
+        $validator = Validator::make($request->all(), [
+            'name' =>'required',
+            'email' =>'required|email',
+            'message' => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            return Redirect::to(url::previous() . '#contact')
+                ->withErrors($validator)
+                ->withInput();
+        }
+
         $data = $request->only('name', 'email');
         $data['messageLines'] = explode("\n", $request->get('message'));
 
@@ -26,7 +41,7 @@ class ContactController extends Controller
                     ->replyTo($data['email']);
         });
 
-        return back()
-            ->withSuccess("Thank you for your message. It has been sent.");
+        return Redirect::to(url::previous() . '#contact')
+            ->with('message', 'Thank you for your message. It has been sent.');
     }
 }

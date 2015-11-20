@@ -9,6 +9,8 @@ $dark-gray: #333;
 $font-color: transparentize($dark-gray, 0.3) !default;
 $alert-text: #a94442;
 $alert-background: #f2dede;
+$success-text: #3c763d;
+$success-background: #dff0d8;
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
@@ -471,6 +473,16 @@ body {
         }
         li {
           padding: 0.25em 0;
+        }
+      }
+
+      .success {
+        color: $success-text;
+        background-color: $success-background;
+        margin-top: 1em;
+        border-radius: 0.25em;
+        p {
+          padding: 1em;
         }
       }
 

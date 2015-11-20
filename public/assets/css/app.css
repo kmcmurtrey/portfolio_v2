@@ -394,6 +394,13 @@ body {
           padding: 1em; }
         .main-container .contact .contact-form .alert li {
           padding: 0.25em 0; }
+      .main-container .contact .contact-form .success {
+        color: #3c763d;
+        background-color: #dff0d8;
+        margin-top: 1em;
+        border-radius: 0.25em; }
+        .main-container .contact .contact-form .success p {
+          padding: 1em; }
 
 .project:last-child {
   border-bottom: none; }

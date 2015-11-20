@@ -1,6 +1,7 @@
 @extends('app')
 
 @section('content')
+
     <header class="navigation" role="banner">
         <div class="navigation-wrapper">
             <a href="/"><h4 class="logo">Korey McMurtrey</h4></a>
@@ -116,6 +117,12 @@
                 </div>
 
                 {!! Form::close() !!}
+
+                @if (Session::has('message'))
+                    <div class="success">
+                        <p>{{ Session::get('message') }}</p>
+                    </div>
+                @endif
 
                 @if ($errors->any())
                     <div class="alert">
