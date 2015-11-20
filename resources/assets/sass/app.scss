@@ -7,6 +7,8 @@ $main-color: #a169aa;
 $white: #fff;
 $dark-gray: #333;
 $font-color: transparentize($dark-gray, 0.3) !default;
+$alert-text: #a94442;
+$alert-background: #f2dede;
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
@@ -459,6 +461,18 @@ body {
         }
       }
 
+      .alert {
+        color: $alert-text;
+        background-color: $alert-background;
+        margin-top: 1em;
+        border-radius: 0.25em;
+        ul {
+          padding: 1em;
+        }
+        li {
+          padding: 0.25em 0;
+        }
+      }
 
     }
   }

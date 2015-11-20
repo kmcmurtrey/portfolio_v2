@@ -385,6 +385,15 @@ body {
           @media screen and (min-width: 53.75em) {
             .main-container .contact .contact-form .form-group-btn .btn {
               margin-left: 68.23843%; } }
+      .main-container .contact .contact-form .alert {
+        color: #a94442;
+        background-color: #f2dede;
+        margin-top: 1em;
+        border-radius: 0.25em; }
+        .main-container .contact .contact-form .alert ul {
+          padding: 1em; }
+        .main-container .contact .contact-form .alert li {
+          padding: 0.25em 0; }
 
 .project:last-child {
   border-bottom: none; }
