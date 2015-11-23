@@ -8,9 +8,10 @@
             <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
             <nav role="navigation">
                 <ul id="js-navigation-menu" class="navigation-menu show">
-                    <li class="nav-link"><a href="#about">ABOUT</a></li>
+                    {{--<li class="nav-link"><a href="#about">ABOUT</a></li>--}}
                     <li class="nav-link"><a href="#projects">PROJECTS</a></li>
                     <li class="nav-link"><a href="#contact">CONTACT</a></li>
+                    <li class="nav-link"><a href="resume">R&Eacute;SUM&Eacute;</a></li>
                 </ul>
             </nav>
         </div>
