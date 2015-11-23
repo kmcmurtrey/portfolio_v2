@@ -28,6 +28,25 @@
 
         <a href="#" name="projects"></a>
         <section class="project">
+            <img class="project-img" src="" alt="Screenshot of Korey McMurtrey's portfolio website.">
+            <div class="project-content">
+                <h2>Portfolio</h2>
+                <p>The first version of my portfolio was based on Treehouse's 'Build a Website' course. My goal with the redesign was to use what I had learned in Code Louisville to create a much cleaner design. I also tried some new technologies for the first time, using Laravel 5.1 for the framework, Bourbon and Neat for the grid, and Sass for the CSS. I expect to use all three of these on future projects.</p>
+                <ul class="tech">
+                    <li>PHP</li>
+                    <li>Laravel 5.1</li>
+                    <li>Sass</li>
+                    <li>Bourbon / Neat</li>
+                </ul>
+                <div class="icons">
+                    <a class="font-icon fa fa-2x" href="https://github.com/kmcmurtrey/portfolio_v2">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="project">
             <img class="project-img" src="assets/img/php_project.jpg" alt="Screenshot of PHP demo project.">
             <div class="project-content">
                 <h2>PHP Project</h2>
