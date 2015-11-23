@@ -118,8 +118,8 @@ body {
   margin: 0; }
 
 .hero {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/img/hero_desk.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/img/hero_desk.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/img/hero_desk.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/img/hero_desk.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -148,8 +148,8 @@ body {
       font-size: 1.2em; }
   @media screen and (min-width: 53.75em) {
     .hero {
-      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/img/hero_desk.jpg"), fixed no-repeat #7F99BE center center;
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/img/hero_desk.jpg"), fixed no-repeat #7F99BE center center;
+      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/img/hero_desk.jpg"), fixed no-repeat #7F99BE center center;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/img/hero_desk.jpg"), fixed no-repeat #7F99BE center center;
       background-color: #324766;
       background-position: top;
       background-repeat: no-repeat;
