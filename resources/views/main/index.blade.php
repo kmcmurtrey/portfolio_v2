@@ -4,13 +4,13 @@
 
     <header class="navigation" role="banner">
         <div class="navigation-wrapper">
-            <a href="/"><h4 class="logo">Korey McMurtrey</h4></a>
+            <a href="/"><h4 class="logo">KOREY MCMURTREY</h4></a>
             <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
             <nav role="navigation">
                 <ul id="js-navigation-menu" class="navigation-menu show">
-                    <li class="nav-link"><a href="#about">About</a></li>
-                    <li class="nav-link"><a href="#projects">Projects</a></li>
-                    <li class="nav-link"><a href="#contact">Contact</a></li>
+                    <li class="nav-link"><a href="#about">ABOUT</a></li>
+                    <li class="nav-link"><a href="#projects">PROJECTS</a></li>
+                    <li class="nav-link"><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
