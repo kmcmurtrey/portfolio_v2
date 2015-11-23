@@ -398,7 +398,7 @@ body {
     }
 
     @include media($large-screen) {
-      padding: 6em 0;
+      padding: 1em 0;
 
       .contact-content {
         @include span-columns(3 of 12);

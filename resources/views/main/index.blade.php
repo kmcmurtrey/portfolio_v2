@@ -77,8 +77,7 @@
         <a href="#" name="contact"></a>
         <section class="contact">
             <div class="contact-content">
-                <h2>Contact Me</h2>
-                <p>If you have any questions or comments, please let me know.</p>
+                <h2>Get In Touch</h2>
 
                 <div class="icons">
                     <a class="font-icon fa fa-2x" href="https://github.com/kmcmurtrey">
