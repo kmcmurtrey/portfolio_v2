@@ -107,9 +107,9 @@ header.navigation {
       text-decoration: none; }
       @media screen and (min-width: 53.75em) {
         header.navigation ul li.nav-link a {
-          padding-right: 1em; } }
-      header.navigation ul li.nav-link a:focus, header.navigation ul li.nav-link a:hover {
-        color: #ed333a; }
+          padding-right: 1em; }
+          header.navigation ul li.nav-link a:focus, header.navigation ul li.nav-link a:hover {
+            color: #ed333a; } }
   header.navigation .active-nav-item a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding-bottom: 3px; }

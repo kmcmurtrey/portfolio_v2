@@ -170,13 +170,15 @@ header.navigation {
 
       @include media ($horizontal-bar-mode) {
         padding-right: 1em;
+
+        &:focus,
+        &:hover {
+          //color: $navigation-color-hover;
+          color: $main-color;
+        }
       }
 
-      &:focus,
-      &:hover {
-        //color: $navigation-color-hover;
-        color: $main-color;
-      }
+
     }
   }
 
