@@ -268,9 +268,12 @@ body {
           .main-container .project .project-content:last-child {
             margin-right: 0; } }
       .main-container .project .project-content h2 {
-        margin-bottom: 0.9em;
+        margin: 1em 0;
         font-size: 2em;
         font-weight: 800; }
+        @media screen and (min-width: 53.75em) {
+          .main-container .project .project-content h2 {
+            margin-top: 0; } }
       .main-container .project .project-content p {
         line-height: 1.5em;
         margin-bottom: 1em;
