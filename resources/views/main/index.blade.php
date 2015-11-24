@@ -28,7 +28,7 @@
 
         <a href="#" name="projects"></a>
         <section class="project">
-            <img class="project-img" src="" alt="Screenshot of Korey McMurtrey's portfolio website.">
+            <img class="project-img" src="assets/img/portfolio.jpg" alt="Screenshot of Korey McMurtrey's portfolio website.">
             <div class="project-content">
                 <h2>Portfolio</h2>
                 <p>The first version of my portfolio was based on Treehouse's 'Build a Website' course. My goal with the redesign was to use what I had learned in Code Louisville to create a much cleaner design. I also tried some new technologies for the first time, using Laravel 5.1 for the framework, Bourbon and Neat for the grid, and Sass for the CSS. I expect to use all three of these on future projects.</p>
@@ -45,6 +45,8 @@
                 </div>
             </div>
         </section>
+
+        <hr>
 
         <section class="project">
             <img class="project-img" src="assets/img/php_project.jpg" alt="Screenshot of PHP demo project.">
@@ -75,8 +77,8 @@
         <section class="project">
             <img class="project-img" src="assets/img/lutes_dental.jpg" alt="Screenshot of Lutes Dental Office website.">
             <div class="project-content">
-                <h2>Lutes Dental Office</h2>
-                <p>My first full project is a website for a dental office, completed as Code Louisville's front-end project. It's a one-page layout featuring a slideshow, forms to download, and contact information. In addition to using a little jQuery, I also built the site from the Foundation framework, and learned to use Git for version control.</p>
+                <a href="http://timothyjlutesdmd.com/"><h2>Lutes Dental Office</h2></a>
+                <p>My first full project is a website for a dental office, completed as Code Louisville's front-end project. It's a one-page layout featuring a slideshow, forms to download, and contact information. In addition to using a little jQuery, I also built the site from the Foundation framework and learned to use Git for version control.</p>
                 <ul class="tech">
                     <li>HTML5 / CSS3</li>
                     <li>jQuery</li>

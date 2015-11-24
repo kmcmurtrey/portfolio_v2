@@ -10,6 +10,13 @@ h1, h2, h3, h4, h5, h6 {
 p, li {
   font-family: 'Merriweather', serif; }
 
+a {
+  text-decoration: none; }
+  a:visited {
+    color: #000; }
+  a:focus, a:hover {
+    color: #ed333a; }
+
 header.navigation {
   background-color: white;
   min-height: 60px;
@@ -103,8 +110,9 @@ header.navigation {
         width: auto; } }
     header.navigation ul li.nav-link a {
       color: #fff;
-      display: inline-block;
-      text-decoration: none; }
+      display: inline-block; }
+      header.navigation ul li.nav-link a:focus, header.navigation ul li.nav-link a:hover {
+        color: #fff; }
       @media screen and (min-width: 53.75em) {
         header.navigation ul li.nav-link a {
           padding-right: 1em; }
@@ -319,7 +327,14 @@ body {
           .main-container .contact .contact-content:last-child {
             margin-right: 0; } }
     .main-container .contact .contact-form {
-      margin: 2em 1em; }
+      margin: 2em 0;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%; }
+      .main-container .contact .contact-form:last-child {
+        margin-right: 0; }
       @media screen and (min-width: 53.75em) {
         .main-container .contact .contact-form {
           margin: 1em 0;
